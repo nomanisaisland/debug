@@ -1,0 +1,38 @@
+<!--
+ * @Author: lujiafeng
+ * @Date: 2022-09-20 22:33:04
+ * @LastEditTime: 2022-09-21 11:32:32
+ * @LastEditors: lujiafeng
+ * @Description: 
+ * @FilePath: \debug-anything\demo\test.html
+ * 可以输入预定的版权声明、个性签名、空行等
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>btn</button>
+  <script>
+    function MyObject (obj) {
+      let a = 1
+      const foo = function () {
+        a++
+      }
+      if (!obj) return;
+      obj.method = foo
+    }
+    // MyObject();
+    // MyObject(new Object())
+    let obj = new Object();
+    MyObject(obj);
+  </script>
+</body>
+
+</html>
